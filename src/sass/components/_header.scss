@@ -1,0 +1,118 @@
+.header {
+  margin: 10.4rem 0 0;
+
+  &-login {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.6rem;
+    height: 3.2rem;
+    align-items: center;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      &__logo {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    &-right {
+      font-size: 1.5rem;
+
+      .btn {
+        line-height: 3.2rem;
+        padding: 0.7rem;
+        text-decoration: none;
+        color: $color-white;
+        cursor: pointer;
+
+        &--active {
+          background-color: $color-primary-light;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &-text {
+    margin: 1.6rem 1.6rem 2rem;
+
+    &__primary {
+      margin: 1.6rem 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    &__secondary {
+      font-size: 1.4rem;
+      opacity: 0.9;
+
+      &--slots {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        background-color: $color-secondary-bg;
+      }
+    }
+  }
+
+  &-nav {
+    margin: 0 1.6rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      background-color: $color-bg-1;
+      width: calc(100% / 3 - 0.65rem);
+      height: 7.7rem;
+      position: relative;
+      top: 0.65rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.9rem;
+
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      &__p {
+        &--primary {
+          font-size: 1.2rem;
+        }
+
+        &--secondary {
+          font-size: 1rem;
+        }
+      }
+
+      &--active {
+        background-color: $color-primary;
+        height: 9rem;
+        top: 0;
+        width: calc(100% / 3 + 1.3rem);
+        border-radius: 8px;
+
+        .header-nav-link__p {
+          &--primary {
+            font-size: 1.4rem;
+          }
+
+          &--secondary {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
