@@ -57,24 +57,25 @@ img {
   transform: rotate(-135deg);
 }
 
-.fixed-btn-container {
-  position: fixed;
-  bottom: 0;
-  z-index: 1000;
-  height: 5.6rem;
-  width: 100%;
-  background-color: #171718;
-  border-top: 0.4rem solid #f05a22;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.u-clock-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  width: 2em;
+  height: 2em;
+  border: 0.3em solid #ffffff;
+  border-radius: 50%;
 }
-.fixed-btn-container__btn {
-  border: none;
-  width: 13.4rem;
-  height: 3.2rem;
-  border-radius: 0.5rem;
-  background-color: #f05a22;
+.u-clock-icon div {
+  position: absolute;
+  right: 0.35em;
+  top: 0.25em;
+  border-bottom: 0.3em solid #ffffff;
+  border-left: 0.3em solid #ffffff;
+  width: 0.6em;
+  height: 0.8em;
 }
 
 .header {
@@ -186,28 +187,7 @@ img {
 .main > * {
   background-color: #25292b;
   border-radius: 1.6rem;
-}
-.main-cash-games__heading {
-  height: 6.7rem;
-  border-radius: 1.6rem;
-  background-color: #2c3234;
-  font-weight: 600;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main-cash-games-leaderboard__heading {
-  text-align: center;
-  margin: 1rem 0 2.1rem;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-.main-cash-games-leaderboard__heading img {
-  position: relative;
-  margin-left: 0.85rem;
-  width: 2rem;
-  top: 0.5rem;
+  overflow: hidden;
 }
 .main-warning-small {
   text-align: center;
@@ -223,6 +203,7 @@ img {
   position: relative;
   margin-top: 2.4rem;
   height: 14.2rem;
+  border-radius: 1.6rem;
 }
 .main-warning__heading--primary {
   text-align: center;
@@ -328,6 +309,120 @@ img {
   font-size: 1.1rem;
 }
 
+.section-cash-games__heading {
+  height: 6.7rem;
+  border-radius: 1.6rem;
+  background-color: #2c3234;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-cash-games-leaderboard__heading {
+  text-align: center;
+  margin: 1rem 0 2.1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.section-cash-games-leaderboard__heading img {
+  position: relative;
+  margin-left: 0.85rem;
+  width: 2rem;
+  top: 0.5rem;
+}
+
+.section-ny {
+  background-color: #1c1d1e;
+}
+.section-ny > * {
+  background-color: #2c3234;
+}
+.section-ny-leaderboard {
+  border-radius: 1.6rem;
+  margin-bottom: 2.4rem;
+  background-color: #25292b;
+  overflow: hidden;
+}
+.section-ny-leaderboard__heading {
+  position: relative;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  height: 10.1rem;
+  padding: 2.8rem 4.45rem 0;
+  margin-bottom: 2.075rem;
+  background-color: #2c3234;
+  text-align: center;
+}
+.section-ny-leaderboard__toggle {
+  width: 26.7rem;
+  height: 3.8rem;
+  border-radius: 7.6rem;
+  border: 0.2rem solid #2c3234;
+  margin: 0 auto 2.194rem;
+  position: relative;
+}
+.section-ny-leaderboard__toggle span {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 3.3rem;
+  margin-left: 2.05rem;
+  font-weight: 600;
+}
+.section-ny-leaderboard__toggle .u-arrow-down {
+  position: absolute;
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: #f05a22;
+  box-shadow: inset 0 0 1px 1px #ffffff;
+  border-radius: 50%;
+  right: 0;
+  top: -0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-ny-leaderboard__toggle .u-arrow-down div {
+  border-color: #ffffff;
+}
+.section-ny-leaderboard__warning {
+  font-size: 1.3rem;
+  margin: -1.2rem 1.9rem 1.882rem;
+  text-align: center;
+}
+.section-ny__p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.9rem;
+  background-color: #1c1d1e;
+}
+.section-ny__warning {
+  background-color: #1c1d1e;
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.fixed-btn-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  height: 5.6rem;
+  width: 100%;
+  background-color: #171718;
+  border-top: 0.4rem solid #f05a22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-btn-container__btn {
+  border: none;
+  width: 13.4rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  background-color: #f05a22;
+}
+
 .leaderboard ::-webkit-scrollbar {
   width: 0.2rem;
 }
@@ -405,6 +500,148 @@ img {
   transform: translateY(-50%);
   width: 80%;
   font-size: 1.3rem;
+}
+
+.tourneys-and-satelites {
+  position: relative;
+  text-align: center;
+  border-radius: 1.6rem;
+  margin-bottom: 2rem;
+}
+.tourneys-and-satelites-banner__heading {
+  background-color: #2c3234;
+  display: block;
+  height: 6.7rem;
+  line-height: 6.7rem;
+  font-weight: 600;
+}
+.tourneys-and-satelites-banner-img-container {
+  background-color: #171718;
+  position: relative;
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+  overflow: hidden;
+}
+.tourneys-and-satelites-banner-img-container__heading {
+  display: block;
+  font-weight: 600;
+  margin: 1.4rem auto 1.6rem;
+}
+.tourneys-and-satelites-banner-img-container-clock {
+  border: 0.2rem solid #f05a22;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 3.2rem;
+  margin: 0 auto 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.tourneys-and-satelites-banner-img-container-clock-icon {
+  width: 3.6rem;
+  height: 3.2rem;
+  position: relative;
+}
+.tourneys-and-satelites-banner-img-container-clock-icon__background {
+  position: absolute;
+  background-color: #f05a22;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  top: -0.6rem;
+  right: 0;
+}
+.tourneys-and-satelites-banner-img-container-clock__text {
+  font-size: 1.3rem;
+  margin-right: 1.211rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.tourneys-and-satelites-banner-img-container__img--left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.tourneys-and-satelites-banner-img-container__img--right {
+  position: absolute;
+  right: -0.6rem;
+  bottom: 0;
+}
+.tourneys-and-satelites__warning {
+  font-size: 1.4rem;
+  margin: 1.6rem 1.1rem 1rem;
+}
+.tourneys-and-satelites__heading {
+  font-size: 1.4rem;
+  margin: 0 1rem 1.5rem;
+  padding: 0 1rem;
+}
+.tourneys-and-satelites__btn {
+  height: 3.2rem;
+  width: 14.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f05a22;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.daily-tourneys-and-satelites {
+  background-color: #1c1d1e;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.daily-tourneys-and-satelites__tourney {
+  height: 8.5rem;
+  border-radius: 1rem;
+  background-image: url(./assets/tournament-bg-m.png);
+  display: flex;
+  align-items: center;
+}
+.daily-tourneys-and-satelites__tourney__left {
+  margin-left: 1.7rem;
+}
+.daily-tourneys-and-satelites__tourney__left p {
+  margin-left: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.daily-tourneys-and-satelites__tourney__left span {
+  display: block;
+  font-size: 2.4rem;
+  color: #ffbe00;
+  font-weight: bolder;
+  margin-top: 0.2rem;
+}
+.daily-tourneys-and-satelites__tourney__right {
+  margin-left: 1.5rem;
+}
+.daily-tourneys-and-satelites__tourney__right p {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.daily-tourneys-and-satelites__tourney__right span {
+  display: block;
+  width: 12rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #b78648;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 0;
+  margin-top: 0.6rem;
+}
+.daily-tourneys-and-satelites__tourney:last-child {
+  background-image: url(./assets/main-bg-sm.png);
+}
+.daily-tourneys-and-satelites__tourney:last-child .daily-tourneys-and-satelites__tourney__right span {
+  background-color: #d7c860;
 }
 
 /*# sourceMappingURL=App.css.map */

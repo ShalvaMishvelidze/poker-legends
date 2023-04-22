@@ -1,0 +1,64 @@
+.daily-tourneys-and-satelites {
+  background-color: $color-primary-bg;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  &__tourney {
+    height: 8.5rem;
+    border-radius: 1rem;
+    background-image: url(./assets/tournament-bg-m.png);
+    display: flex;
+    align-items: center;
+
+    &__left {
+      margin-left: 1.7rem;
+
+      p {
+        margin-left: 0.3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      span {
+        display: block;
+        font-size: 2.4rem;
+        color: $color-yellow;
+        font-weight: bolder;
+        margin-top: 0.2rem;
+      }
+    }
+
+    &__right {
+      margin-left: 1.5rem;
+
+      p {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      span {
+        display: block;
+        width: 12rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        font-size: 1.4rem;
+        background-color: $color-yellow-dark;
+        font-weight: 600;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 0;
+        margin-top: 0.6rem;
+      }
+    }
+
+    &:last-child {
+      background-image: url(./assets/main-bg-sm.png);
+    }
+
+    &:last-child &__right span {
+      background-color: $color-yellow-light;
+    }
+  }
+}

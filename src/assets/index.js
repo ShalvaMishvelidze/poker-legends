@@ -12,6 +12,8 @@ import watchSm from './watch-icon-sm.png';
 import playstationSm from './playstation-icon-sm.png';
 import oculusSm from './oculus-icon-sm.png';
 import marshallTravelSm from './marshall-travel-icon-sm.png';
+import promoLeft from './promo-left-img-m.png';
+import promoRight from './promo-right-img-m.png';
 
 const prizes = [
   {
@@ -48,4 +50,14 @@ const prizes = [
   },
 ];
 
-export { banner, logo, soon, cashback, jackpot, example, prizes };
+export {
+  banner,
+  logo,
+  soon,
+  cashback,
+  jackpot,
+  example,
+  prizes,
+  promoLeft,
+  promoRight,
+};

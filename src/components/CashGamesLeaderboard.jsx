@@ -8,8 +8,8 @@ const arr = [
 
 export function CashGamesLeaderboard({}) {
   return (
-    <div className="main-cash-games-leaderboard">
-      <p className="main-cash-games-leaderboard__heading">
+    <div className="section-cash-games-leaderboard">
+      <p className="section-cash-games-leaderboard__heading">
         TOP20 ლიდერბორდი ჰოლდემში
         <img src={example} alt="example" />
       </p>

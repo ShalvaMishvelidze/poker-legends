@@ -7,8 +7,8 @@ import React from 'react';
 const CashGames = () => {
   return (
     <>
-      <div className="main-cash-games">
-        <div className="main-cash-games__heading">
+      <section className="section-cash-games">
+        <div className="section-cash-games__heading">
           <p className="heading-primary">1₾ რეიქი = 1 ქულას</p>
         </div>
         <CashGamesLeaderboard />
@@ -16,7 +16,7 @@ const CashGames = () => {
         <CashGamesLeaderboard />
         <Prizes />
         <SmallerWarningMessage />
-      </div>
+      </section>
       <WarningMessage />
     </>
   );
