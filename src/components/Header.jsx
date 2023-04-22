@@ -4,14 +4,14 @@ import { HeaderLogin } from './HeaderLogin';
 import React from 'react';
 import { banner } from '../assets';
 
-const Header = () => {
+const Header = ({ setMain }) => {
   return (
-    <div className="header">
+    <header className="header">
       <HeaderLogin />
       <img src={banner} alt="banner" className="header__img" />
       <HeaderText />
-      <HeaderNav />
-    </div>
+      <HeaderNav setMain={setMain} />
+    </header>
   );
 };
 

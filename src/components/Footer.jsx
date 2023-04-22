@@ -1,7 +1,14 @@
+import { FooterDeals } from './FooterDeals';
+import { FooterRules } from './FooterRules';
 import React from 'react';
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="footer">
+      <FooterRules />
+      <FooterDeals />
+    </footer>
+  );
 };
 
 export default Footer;

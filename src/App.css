@@ -1,3 +1,23 @@
+.fixed-btn-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  height: 5.6rem;
+  width: 100%;
+  background-color: #171718;
+  border-top: 0.4rem solid #f05a22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-btn-container__btn {
+  border: none;
+  width: 13.4rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  background-color: #f05a22;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +31,18 @@ html {
 body {
   background-color: #1c1d1e;
   color: #ffffff;
+  font-size: 1.6rem;
 }
 
 img {
   max-width: 100%;
+}
+
+.heading-primary {
+  font-size: 1.6rem;
+}
+.heading-primary--helvetica {
+  font-family: helvetica;
 }
 
 .header {
@@ -110,6 +138,266 @@ img {
   font-size: 1.4rem;
 }
 .header-nav-link--active .header-nav-link__p--secondary {
+  font-size: 1.1rem;
+}
+
+.main {
+  margin: 2.5rem 1.6rem 5.5rem;
+}
+.main > * {
+  background-color: #25292b;
+  border-radius: 1.6rem;
+}
+.main-cash-games__heading {
+  height: 6.7rem;
+  border-radius: 1.6rem;
+  background-color: #2c3234;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-cash-games-leaderboard__heading {
+  text-align: center;
+  margin: 1rem 0 2.1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.main-cash-games-leaderboard__heading img {
+  position: relative;
+  margin-left: 0.85rem;
+  width: 2rem;
+  top: 0.5rem;
+}
+.main-cash-games-leaderboard-entry-headers {
+  margin: 0 1.4rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-cash-games-leaderboard-entry-headers span:last-child {
+  margin-right: 4rem;
+}
+.main-cash-games ::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.main-cash-games ::-webkit-scrollbar-thumb {
+  background-color: #f05a22;
+  border-radius: 0.2rem;
+}
+.main-cash-games-leaderboard-entry-container {
+  margin: 0 1.45rem 2rem;
+  height: 30rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.main-cash-games-leaderboard-entry-container__entry {
+  height: 4.5rem;
+  background-color: #1e2122;
+  border-radius: 7.6rem;
+  border: 0.2rem solid #2c3234;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  margin-right: 0.7rem;
+}
+.main-cash-games-leaderboard-entry-container__entry:last-child {
+  margin-bottom: 0;
+}
+.main-cash-games-leaderboard-entry-container__entry span {
+  margin-left: 4rem;
+}
+.main-cash-games-leaderboard-entry-container__entry span:first-child {
+  margin-left: 1.3rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2c3234;
+}
+.main-cash-games-leaderboard-entry-container__entry span:last-child {
+  margin-right: 2rem;
+  margin-left: 0;
+  width: 7.4rem;
+  text-align: center;
+}
+.main-cash-games-prizes__prize {
+  height: 6.3rem;
+  background-color: #2c3234;
+  border-radius: 1.4rem;
+  margin: 0 1.4rem 0.8rem;
+  position: relative;
+}
+.main-cash-games-prizes__prize > * {
+  position: absolute;
+}
+.main-cash-games-prizes__prize__trapez-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2.8rem;
+  width: 0.4rem;
+  background-color: #ef5a21;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.main-cash-games-prizes__prize__img {
+  left: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.6rem;
+}
+.main-cash-games-prizes__prize__text {
+  left: 6.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  font-size: 1.3rem;
+}
+.main-warning-small {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.6rem 0 2rem;
+}
+.main-warning-small span {
+  color: #ef5a21;
+  text-decoration: underline;
+  display: block;
+}
+.main-warning {
+  position: relative;
+  margin-top: 2.4rem;
+  height: 14.2rem;
+}
+.main-warning__trapez-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12.5rem;
+  height: 0.4rem;
+  background-color: #ef5a21;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.main-warning__heading-primary {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 2.4rem 5.2rem 1.1rem;
+}
+.main-warning__heading-secondary {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 4.5rem 1.6rem;
+}
+
+.footer {
+  margin: 0 1.6rem 22rem;
+}
+.footer-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2.1rem 0 4rem;
+}
+.footer-rules__rule {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #25292b;
+  border-radius: 0.5rem;
+}
+.footer-rules__rule span {
+  font-size: 1.4rem;
+  color: #bbbbbb;
+  width: 22rem;
+  padding: 0 1.4rem;
+}
+.footer-rules__rule__arrow-down {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer-rules__rule__arrow-down div {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-top: 3px solid #bbbbbb;
+  border-left: 3px solid #bbbbbb;
+  rotate: -135deg;
+  top: 1.9rem;
+}
+.footer ::-webkit-scrollbar {
+  display: none;
+  height: 0.8rem;
+}
+.footer ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.footer ::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 3px;
+}
+.footer-deals {
+  margin: 2.4rem 0 0;
+  overflow-x: auto;
+}
+.footer-deals-container {
+  min-width: 101rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.footer-deals-container__deal {
+  position: relative;
+  width: 15.5rem;
+  height: 18rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.footer-deals-container__deal > * {
+  position: absolute;
+  z-index: 10;
+}
+.footer-deals-container__deal [class^=footer-deals-container__deal__gradient] {
+  width: 15.5rem;
+  height: 18rem;
+  z-index: 9;
+}
+.footer-deals-container__deal__gradient--blue {
+  background-image: linear-gradient(to top, #0d649b 18.5%, rgba(13, 100, 155, 0.9098039216) 37%, rgba(13, 100, 155, 0) 55.5%);
+}
+.footer-deals-container__deal__gradient--orange {
+  background-image: linear-gradient(to top, #ef541c 18.5%, #ef541c 23.5%, rgba(239, 84, 28, 0.6) 37%, rgba(239, 84, 28, 0) 55.5%);
+}
+.footer-deals-container__deal__gradient--dark-blue {
+  background-image: linear-gradient(to top, #1a176c 18.5%, rgba(26, 23, 108, 0.6) 37%, rgba(26, 23, 108, 0) 55.5%);
+}
+.footer-deals-container__deal__img {
+  object-fit: cover;
+  width: 15.5rem;
+  height: 18rem;
+  z-index: 8;
+}
+.footer-deals-container__deal__p {
+  bottom: 1.6rem;
+  padding: 0 1.4rem;
+}
+.footer-deals-container__deal__p__primary {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.footer-deals-container__deal__p__secondary {
   font-size: 1.1rem;
 }
 

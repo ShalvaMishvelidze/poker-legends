@@ -1,0 +1,18 @@
+.fixed-btn-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  height: 5.6rem;
+  width: 100%;
+  background-color: $color-bg-black;
+  border-top: 0.4rem solid $color-secondary;
+  @include flexCenterHv;
+
+  &__btn {
+    border: none;
+    width: 13.4rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+    background-color: $color-secondary;
+  }
+}
