@@ -1,0 +1,64 @@
+.main {
+  margin: 2.5rem 1.6rem 5.5rem;
+
+  & > * {
+    background-color: $color-secondary-bg;
+    border-radius: 1.6rem;
+  }
+
+  &-cash-games {
+    &__heading {
+      height: 6.7rem;
+      border-radius: 1.6rem;
+      background-color: $color-bg-1;
+      font-weight: 600;
+      font-size: 1.6rem;
+      @include flexCenterHv;
+    }
+
+    &-leaderboard__heading {
+      text-align: center;
+      margin: 1rem 0 2.1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      & img {
+        position: relative;
+        margin-left: 0.85rem;
+        width: 2rem;
+        top: 0.5rem;
+      }
+    }
+  }
+
+  &-warning-small {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.6rem 0 2rem;
+
+    span {
+      color: $color-primary;
+      text-decoration: underline;
+      display: block;
+    }
+  }
+
+  &-warning {
+    position: relative;
+    margin-top: 2.4rem;
+    height: 14.2rem;
+
+    &__heading--primary {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 2.4rem 5.2rem 1.1rem;
+    }
+
+    &__heading--secondary {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 0 4.5rem 1.6rem;
+    }
+  }
+}

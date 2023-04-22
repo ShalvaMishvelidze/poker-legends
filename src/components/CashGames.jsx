@@ -1,6 +1,6 @@
 import { SmallerWarningMessage } from './SmallerWarningMessage';
 import { WarningMessage } from './WarningMessage';
-import { CashGamesPrizes } from './CashGamesPrizes';
+import { Prizes } from './Prizes';
 import { CashGamesLeaderboard } from './CashGamesLeaderboard';
 import React from 'react';
 
@@ -12,9 +12,9 @@ const CashGames = () => {
           <p className="heading-primary">1₾ რეიქი = 1 ქულას</p>
         </div>
         <CashGamesLeaderboard />
-        <CashGamesPrizes />
+        <Prizes />
         <CashGamesLeaderboard />
-        <CashGamesPrizes />
+        <Prizes />
         <SmallerWarningMessage />
       </div>
       <WarningMessage />

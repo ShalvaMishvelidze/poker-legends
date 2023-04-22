@@ -1,3 +1,4 @@
+import { Leaderboard } from './Leaderboard';
 import React from 'react';
 import { example } from '../assets';
 
@@ -12,25 +13,7 @@ export function CashGamesLeaderboard({}) {
         TOP20 ლიდერბორდი ჰოლდემში
         <img src={example} alt="example" />
       </p>
-      <div className="main-cash-games-leaderboard-entry-headers">
-        <span>ადგილი</span>
-        <span>ვაუჩერი</span>
-        <span>პრიზი</span>
-      </div>
-      <div className="main-cash-games-leaderboard-entry-container">
-        {arr.map((id) => {
-          return (
-            <div
-              key={id}
-              className="main-cash-games-leaderboard-entry-container__entry"
-            >
-              <span>{id}</span>
-              <span>1 500 ₾</span>
-              <span>A კატეგორიის საგზური</span>
-            </div>
-          );
-        })}
-      </div>
+      <Leaderboard arr={arr} />
     </div>
   );
 }

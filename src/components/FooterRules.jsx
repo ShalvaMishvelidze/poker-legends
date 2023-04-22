@@ -9,19 +9,19 @@ export function FooterRules({}) {
       <div className="footer-rules">
         <div className="footer-rules__rule">
           <span>როდის იწყება და რა ფორმატით გაიმართება აქცია</span>
-          <div className="footer-rules__rule__arrow-down">
+          <div className="u-arrow-down">
             <div></div>
           </div>
         </div>
         <div className="footer-rules__rule">
           <span>როგორ მივიღო აქციაში მონაწილეობა?</span>
-          <div className="footer-rules__rule__arrow-down">
+          <div className="u-arrow-down">
             <div></div>
           </div>
         </div>
         <div className="footer-rules__rule">
           <span>სხვადასვა</span>
-          <div className="footer-rules__rule__arrow-down">
+          <div className="u-arrow-down">
             <div></div>
           </div>
         </div>

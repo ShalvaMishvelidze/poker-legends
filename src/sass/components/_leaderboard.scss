@@ -1,0 +1,65 @@
+.leaderboard {
+  ::-webkit-scrollbar {
+    width: 0.2rem;
+
+    &-thumb {
+      background-color: $color-secondary;
+      border-radius: 0.2rem;
+    }
+  }
+
+  &-headers {
+    margin: 0 1.4rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+
+    span:last-child {
+      margin-right: 4rem;
+    }
+  }
+
+  &-container {
+    margin: 0 1.45rem 2rem;
+    height: 30rem;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &__entry {
+      height: 4.5rem;
+      background-color: $color-bg-2;
+      border-radius: 7.6rem;
+      border: 0.2rem solid $color-bg-1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      margin-right: 0.7rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        margin-left: 4rem;
+      }
+
+      span:first-child {
+        margin-left: 1.3rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $color-bg-1;
+      }
+
+      span:last-child {
+        margin-right: 2rem;
+        margin-left: 0;
+        width: 7.4rem;
+        text-align: center;
+      }
+    }
+  }
+}

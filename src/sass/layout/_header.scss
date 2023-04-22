@@ -8,7 +8,7 @@
     height: 3.2rem;
     align-items: center;
 
-    &-left {
+    &__left {
       display: flex;
       align-items: center;
 
@@ -18,20 +18,27 @@
       }
     }
 
-    &-right {
+    &__right {
       font-size: 1.5rem;
 
-      .btn {
+      &__btn {
         line-height: 3.2rem;
         padding: 0.7rem;
         text-decoration: none;
         color: $color-white;
         cursor: pointer;
+        text-decoration: none;
+      }
 
-        &--active {
-          background-color: $color-primary-light;
-          border-radius: 5px;
-        }
+      &__btn--active {
+        line-height: 3.2rem;
+        padding: 0.7rem;
+        text-decoration: none;
+        color: $color-white;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $color-primary-light;
+        border-radius: 5px;
       }
     }
   }
@@ -39,13 +46,13 @@
   &-text {
     margin: 1.6rem 1.6rem 2rem;
 
-    &__primary {
+    &--primary {
       margin: 1.6rem 0;
       font-size: 1.6rem;
       font-weight: 600;
     }
 
-    &__secondary {
+    &--secondary {
       font-size: 1.4rem;
       opacity: 0.9;
 
