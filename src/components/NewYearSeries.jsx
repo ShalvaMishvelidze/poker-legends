@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NewYearSeries = () => {
-  return <div>NewYearSeries</div>;
+  return <></>;
 };
 
 export default NewYearSeries;
