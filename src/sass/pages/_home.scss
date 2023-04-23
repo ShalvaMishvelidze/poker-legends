@@ -37,7 +37,6 @@
     overflow: hidden;
 
     &__heading {
-      position: relative;
       border-radius: 1.6rem;
       font-weight: 600;
       height: 10.1rem;
@@ -103,6 +102,10 @@
     font-size: 1.4rem;
     margin-right: 1rem;
   }
+}
+
+.section-final {
+  background-color: $color-primary-bg;
 }
 
 .fixed-btn-container {

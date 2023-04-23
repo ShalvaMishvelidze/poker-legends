@@ -2,7 +2,7 @@ import React from 'react';
 
 export function WarningMessage({}) {
   return (
-    <div className="main-warning">
+    <div className="main-warning u-position-relative">
       <div className="u-trapez-top"></div>
       <p className="main-warning__heading--primary">
         დამატებით შედგება, ქეშგეიმის, ტურნირების და სპინ პოკერის 12 Side

@@ -3,7 +3,7 @@ import React from 'react';
 
 export function TourneysAndSatelites({}) {
   return (
-    <div className="tourneys-and-satelites">
+    <div className="tourneys-and-satelites u-position-relative">
       <div className="u-trapez-top"></div>
       <TourneysAndSatelitesBanner />
       <p className="tourneys-and-satelites__warning">

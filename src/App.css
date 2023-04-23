@@ -25,6 +25,10 @@ img {
   font-family: helvetica;
 }
 
+.u-position-relative {
+  position: relative;
+}
+
 .u-trapez-top {
   position: absolute;
   top: 0;
@@ -184,6 +188,13 @@ img {
 .main {
   margin: 2.5rem 1.6rem 5.5rem;
 }
+.main ::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.main ::-webkit-scrollbar-thumb {
+  background-color: #f05a22;
+  border-radius: 0.2rem;
+}
 .main > * {
   background-color: #25292b;
   border-radius: 1.6rem;
@@ -200,7 +211,6 @@ img {
   display: block;
 }
 .main-warning {
-  position: relative;
   margin-top: 2.4rem;
   height: 14.2rem;
   border-radius: 1.6rem;
@@ -345,7 +355,6 @@ img {
   overflow: hidden;
 }
 .section-ny-leaderboard__heading {
-  position: relative;
   border-radius: 1.6rem;
   font-weight: 600;
   height: 10.1rem;
@@ -403,6 +412,10 @@ img {
   margin-right: 1rem;
 }
 
+.section-final {
+  background-color: #1c1d1e;
+}
+
 .fixed-btn-container {
   position: fixed;
   bottom: 0;
@@ -423,13 +436,6 @@ img {
   background-color: #f05a22;
 }
 
-.leaderboard ::-webkit-scrollbar {
-  width: 0.2rem;
-}
-.leaderboard ::-webkit-scrollbar-thumb {
-  background-color: #f05a22;
-  border-radius: 0.2rem;
-}
 .leaderboard-headers {
   margin: 0 1.4rem 1.6rem;
   display: flex;
@@ -483,7 +489,6 @@ img {
   background-color: #2c3234;
   border-radius: 1.4rem;
   margin: 0 1.4rem 0.8rem;
-  position: relative;
 }
 .prizes__prize > * {
   position: absolute;
@@ -503,7 +508,6 @@ img {
 }
 
 .tourneys-and-satelites {
-  position: relative;
   text-align: center;
   border-radius: 1.6rem;
   margin-bottom: 2rem;
@@ -598,6 +602,7 @@ img {
   height: 8.5rem;
   border-radius: 1rem;
   background-image: url(./assets/tournament-bg-m.png);
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -642,6 +647,193 @@ img {
 }
 .daily-tourneys-and-satelites__tourney:last-child .daily-tourneys-and-satelites__tourney__right span {
   background-color: #d7c860;
+}
+
+.festival {
+  background-color: #171718;
+  border: 0.4rem solid #25292b;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  padding: 2rem 2.05rem;
+}
+.festival__banner {
+  border-radius: 0.8rem;
+  width: 30.1rem;
+  height: 20.1rem;
+  object-fit: cover;
+  margin-bottom: 1.7rem;
+}
+.festival__heading--secondary {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.festival__heading--primary {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 1.2rem;
+}
+.festival__date {
+  height: 6.2rem;
+  border-radius: 0.8rem;
+  background-color: #2c3234;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.festival__date__text {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 25rem;
+  padding-left: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+.festival-category {
+  background-color: #25292b;
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+.festival-category:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.festival-category-heading {
+  height: 5.3rem;
+  line-height: 5.3rem;
+  text-align: center;
+  background-color: #2c3234;
+}
+.festival-category-heading__heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.festival-category-includes-container {
+  margin: 0.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.festival-category-includes-container__includes {
+  border-radius: 1rem;
+  background-color: #1c1d13;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.festival-category-includes-container__includes__img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.6rem;
+  margin: 1.2rem 0 1.2rem 1.5rem;
+}
+.festival-category-includes-container__includes__text {
+  margin: 0.8rem 5.3rem 0.8rem 1.2rem;
+  font-size: 1.3rem;
+}
+.festival-category-includes-container:last-child .festival-category-includes-container__includes:last-child {
+  display: none;
+}
+
+.tickets {
+  background-color: #25292b;
+  border-radius: 1.4rem;
+  margin-top: 2.569rem;
+  margin-bottom: 2.4rem;
+}
+.tickets-heading {
+  border-radius: 1.6rem;
+  background-color: #2c3234;
+  padding: 2.3rem 5.7rem 2.4rem;
+  overflow: hidden;
+}
+.tickets-heading__heading {
+  text-align: center;
+  font-weight: 600;
+}
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.6rem;
+  padding-bottom: 1rem;
+}
+.tickets-container__ticket {
+  border-radius: 1.2rem;
+  background-color: #1e2122;
+  padding: 2rem;
+  position: relative;
+}
+.tickets-container__ticket__img {
+  width: 6.3rem;
+  position: absolute;
+  top: 0;
+  right: 1.448rem;
+}
+.tickets-container__ticket__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.tickets-container__ticket__paragraph {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.tickets-container__ticket__warning {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.tickets__warning {
+  font-size: 1.3rem;
+  padding: 0 3.9rem 1rem;
+  text-align: center;
+}
+.tickets__warning:last-child {
+  padding-bottom: 1.4rem;
+}
+
+.mystic-key {
+  background-color: #25292b;
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+.mystic-key-heading {
+  background-color: #2c3234;
+  height: 6.3rem;
+  border-radius: 1.6rem;
+}
+.mystic-key-tourneys {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 2rem 1.6rem;
+  height: 38rem;
+  overflow-y: auto;
+}
+.mystic-key-tourneys__tourney {
+  width: 29.5rem;
+  min-height: 5.6rem;
+  background-color: #1e2122;
+  border-radius: 7.6rem;
+  border: 0.2rem solid #2c3234;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mystic-key-tourneys__tourney div {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2c3234;
+  font-size: 1rem;
+  margin-left: 1.4rem;
+}
+.mystic-key-tourneys__tourney p {
+  font-size: 1.2rem;
+  margin: 1.05rem 0;
+  margin-left: 1.2rem;
+  width: 20.2rem;
 }
 
 /*# sourceMappingURL=App.css.map */

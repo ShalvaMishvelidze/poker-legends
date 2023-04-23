@@ -10,7 +10,7 @@ const arr = [
 export function NyLeaderboard() {
   return (
     <div className="section-ny-leaderboard">
-      <p className="section-ny-leaderboard__heading">
+      <p className="section-ny-leaderboard__heading u-position-relative">
         <span className="u-trapez-top"></span>
         მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
       </p>

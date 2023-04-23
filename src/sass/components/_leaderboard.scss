@@ -1,13 +1,4 @@
 .leaderboard {
-  ::-webkit-scrollbar {
-    width: 0.2rem;
-
-    &-thumb {
-      background-color: $color-secondary;
-      border-radius: 0.2rem;
-    }
-  }
-
   &-headers {
     margin: 0 1.4rem 1.6rem;
     display: flex;
