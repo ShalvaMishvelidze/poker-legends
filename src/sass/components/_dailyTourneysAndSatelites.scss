@@ -1,16 +1,46 @@
 .daily-tourneys-and-satelites {
   background-color: $color-primary-bg;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
+
+  @include respMin(940px) {
+    padding: 0 2.4rem;
+    background-color: $color-bg-3;
+    border-radius: 1.6rem;
+    border: 0.4rem solid $color-secondary-bg;
+  }
+
+  &__p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.9rem;
+    display: block;
+
+    @include respMin(940px) {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 2.4rem;
+    }
+  }
 
   &__tourney {
     height: 8.5rem;
     border-radius: 1rem;
     background-image: url(./assets/tournament-bg-m.png);
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    width: 39.5rem;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+
+    @include respMin(940px) {
+      width: calc(50% - 0.5rem);
+      display: inline-flex;
+      background-size: cover;
+      &:nth-child(2) {
+        margin-right: 1rem;
+      }
+    }
 
     &__left {
       margin-left: 1.7rem;
@@ -54,12 +84,29 @@
       }
     }
 
-    &:last-child {
+    &:nth-child(4) {
       background-image: url(./assets/main-bg-sm.png);
+      width: 39.5rem;
+
+      @include respMin(940px) {
+        background-image: url(./assets/main-bg.png);
+        width: 100%;
+        margin-bottom: 0;
+      }
     }
 
-    &:last-child &__right span {
+    &:nth-child(4) &__right span {
       background-color: $color-yellow-light;
+    }
+  }
+
+  &__warning {
+    margin: 1.6rem auto 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+    @include respMin(940px) {
+      margin: 2rem;
     }
   }
 }

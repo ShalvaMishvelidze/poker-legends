@@ -2,6 +2,7 @@ import React from 'react';
 import { Leaderboard } from './Leaderboard';
 import { Prizes } from './Prizes';
 import { SmallerWarningMessage } from './SmallerWarningMessage';
+import { mechanic } from '../assets';
 
 const arr = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
@@ -16,9 +17,7 @@ export function NyLeaderboard() {
       </p>
       <div className="section-ny-leaderboard__toggle">
         <span>ქულების დაგროვების მექანიკა</span>
-        <div className="u-arrow-down">
-          <div></div>
-        </div>
+        <img src={mechanic} alt="mechanic icon" />
       </div>
       <Leaderboard arr={arr} />
       <Prizes />

@@ -5,7 +5,12 @@ import { FestivalCategory } from './FestivalCategory';
 export function Festival() {
   return (
     <div className="festival">
-      <img src={finalBanner} alt="final banner" className="festival__banner" />
+      <img
+        srcSet=""
+        src={finalBanner}
+        alt="final banner"
+        className="festival__banner"
+      />
       <p className="festival__heading--secondary">
         გაემგზავრე The Festival in Malta-ზე!
       </p>

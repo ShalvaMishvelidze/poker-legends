@@ -1,6 +1,10 @@
 .main {
   margin: 2.5rem 1.6rem 5.5rem;
 
+  @include respMin(940px) {
+    margin: 2.5rem 4.3rem 5.5rem;
+  }
+
   ::-webkit-scrollbar {
     width: 0.2rem;
 

@@ -1,10 +1,15 @@
 import React from 'react';
+import { ticketSm } from '../assets';
+
 export function Leaderboard({ arr }) {
   return (
     <div className="leaderboard">
       <div className="leaderboard-headers">
         <span>ადგილი</span>
-        <span>ვაუჩერი</span>
+        <span>
+          <img src={ticketSm} alt="ticket" />
+          ვაუჩერი
+        </span>
         <span>პრიზი</span>
       </div>
       <div className="leaderboard-container">

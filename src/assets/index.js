@@ -1,19 +1,23 @@
 import banner from './banner.jpg';
 import logo from './logo.png';
-import soon from './soon.png';
-import cashback from './cashback.png';
-import jackpot from './jackpot.png';
+import soon1x from './soon.png';
+import soon2x from './soon@2x.png';
+import soon3x from './soon@3x.png';
+import cashback1x from './cashback.png';
+import cashback2x from './cashback@2x.png';
+import cashback3x from './cashback@3x.png';
+import jackpot1x from './jackpot.png';
+import jackpot2x from './jackpot@2x.png';
+import jackpot3x from './jackpot@3x.png';
 import example from './example-icon.png';
 import travelSm from './travel-icon-sm.png';
 import ticketSm from './ticket-icon-sm.png';
 import airpodsSm from './airpods-icon-sm.png';
-import ipadSm from './ipad-icon-sm.png';
-import watchSm from './watch-icon-sm.png';
-import playstationSm from './playstation-icon-sm.png';
-import oculusSm from './oculus-icon-sm.png';
-import marshallTravelSm from './marshall-travel-icon-sm.png';
 import promoLeft from './promo-left-img-m.png';
+import promoLeftBig from './promo-left-img.png';
 import promoRight from './promo-right-img-m.png';
+import promoRightBig from './promo-right-img.png';
+import mechanic from './mechanic-icon.png';
 import finalBanner from './final-info-img.jpg';
 import finalTicket from './final-item-ticket-icon.png';
 import finalChip from './final-item-event-icon.png';
@@ -33,26 +37,6 @@ const prizes = [
   {
     text: 'Apple Airpods',
     img: airpodsSm,
-  },
-  {
-    text: 'Apple Ipad',
-    img: ipadSm,
-  },
-  {
-    text: 'Marshll Travel',
-    img: marshallTravelSm,
-  },
-  {
-    text: 'Oculus Headset',
-    img: oculusSm,
-  },
-  {
-    text: 'Playstation',
-    img: playstationSm,
-  },
-  {
-    text: 'Apple Watch',
-    img: watchSm,
   },
 ];
 
@@ -114,6 +98,24 @@ const tickets = [
   },
 ];
 
+const soon = [
+  { src: soon1x, dencity: '1x' },
+  { src: soon2x, dencity: '2x' },
+  { src: soon3x, dencity: '3x' },
+];
+
+const cashback = [
+  { src: cashback1x, dencity: '1x' },
+  { src: cashback2x, dencity: '2x' },
+  { src: cashback3x, dencity: '3x' },
+];
+
+const jackpot = [
+  { src: jackpot1x, dencity: '1x' },
+  { src: jackpot2x, dencity: '2x' },
+  { src: jackpot3x, dencity: '3x' },
+];
+
 export {
   finalBanner,
   banner,
@@ -122,9 +124,13 @@ export {
   cashback,
   jackpot,
   example,
+  ticketSm,
   prizes,
   promoLeft,
+  promoLeftBig,
   promoRight,
+  promoRightBig,
+  mechanic,
   festivalCategory,
   tickets,
   finalPlaneTicket1,

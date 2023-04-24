@@ -1,8 +1,8 @@
 import Clock from './Clock';
 import React from 'react';
-import { promoLeft, promoRight } from '../assets';
+import { promoLeft, promoLeftBig, promoRight, promoRightBig } from '../assets';
 
-export function TourneysAndSatelitesBanner({}) {
+export function TourneysAndSatelitesBanner({ width }) {
   return (
     <div className="tourneys-and-satelites-banner">
       <span className="tourneys-and-satelites-banner__heading">
@@ -14,15 +14,30 @@ export function TourneysAndSatelitesBanner({}) {
         </span>
         <Clock />
         <img
-          src={promoLeft}
+          srcSet={`${promoLeft} 87w, ${promoLeftBig} 203w`}
+          sizes="(max-width: 940px) 87px, 203px"
           alt="promo image"
           className="tourneys-and-satelites-banner-img-container__img--left"
         />
         <img
-          src={promoRight}
+          srcSet={`${promoRight} 87w, ${promoRightBig} 203w`}
+          sizes="(max-width: 940px) 87px, 203px"
           alt="promo image"
           className="tourneys-and-satelites-banner-img-container__img--right"
         />
+        {+width > 939 && (
+          <>
+            <p className="tourneys-and-satelites-banner__warning">
+              * ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან.
+            </p>
+            <p className="tourneys-and-satelites-banner__warning">
+              ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+            </p>
+            <button className="tourneys-and-satelites__btn">
+              პოკერის ლობი
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

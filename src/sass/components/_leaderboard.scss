@@ -4,6 +4,19 @@
     display: flex;
     justify-content: space-between;
 
+    span:nth-child(2) {
+      padding-left: 2.5rem;
+      position: relative;
+
+      & img {
+        position: absolute;
+        width: 2rem;
+        left: 0;
+        top: 0.4rem;
+        display: inline-block;
+      }
+    }
+
     span:last-child {
       margin-right: 4rem;
     }
