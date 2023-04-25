@@ -1,49 +1,119 @@
 .mystic-key {
-  background-color: $color-secondary-bg;
-  border-radius: 1.4rem;
-  overflow: hidden;
+	background-color: $color-secondary-bg;
+	border-radius: 1.4rem;
+	overflow: hidden;
 
-  &-heading {
-    background-color: $color-bg-1;
-    height: 6.3rem;
-    border-radius: 1.6rem;
-  }
+	@include respMin(600px) {
+		background-color: $color-bg-3;
+		box-shadow: inset 0 0 0 0.4rem $color-bg-1;
+	}
 
-  &-tourneys {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    margin: 2rem 1.6rem;
-    height: 38rem;
-    overflow-y: auto;
+	&-heading {
+		background-color: $color-bg-1;
+		border-radius: 1.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
 
-    &__tourney {
-      width: 29.5rem;
-      min-height: 5.6rem;
-      background-color: $color-bg-2;
-      border-radius: 7.6rem;
-      border: 0.2rem solid $color-bg-1;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+		@include respMin(600px) {
+			border-radius: 0;
+		}
 
-      div {
-        width: 2.4rem;
-        height: 2.4rem;
-        line-height: 2.4rem;
-        text-align: center;
-        border-radius: 50%;
-        background-color: $color-bg-1;
-        font-size: 1rem;
-        margin-left: 1.4rem;
-      }
+		&__img {
+			margin-right: 0.5rem;
+			background-image: linear-gradient(
+				to bottom,
+				#f6f2c0 0,
+				#f6e27a 22%,
+				#cb9b51 32%,
+				#6d632f 50%,
+				#cb9b51 65%,
+				#f6e27a 78%,
+				#f6f2c0 100%
+			);
+			color: transparent;
+			border-radius: 50%;
+		}
 
-      p {
-        font-size: 1.2rem;
-        margin: 1.05rem 0;
-        margin-left: 1.2rem;
-        width: 20.2rem;
-      }
-    }
-  }
+		&__text {
+			font-size: 3rem;
+			font-weight: 600;
+			background-image: linear-gradient(
+				to bottom,
+				#f6f2c0 0,
+				#f6e27a 22%,
+				#cb9b51 32%,
+				#6d632f 50%,
+				#cb9b51 65%,
+				#f6e27a 78%,
+				#f6f2c0 100%
+			);
+			color: transparent;
+			background-clip: text;
+			-webkit-background-clip: text;
+
+			@include respMax(374px) {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	&-tourneys {
+		::-webkit-scrollbar-track {
+			background-color: $color-bg-1;
+		}
+
+		@include respMin(600px) {
+			padding: 2.2rem;
+			padding-bottom: 1.8rem;
+			margin: 2.4rem;
+			margin-bottom: 2rem;
+			background-color: $color-bg-1;
+			border-radius: 1.2rem;
+			background-color: $color-secondary-bg;
+		}
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: 0.8rem;
+			margin: 2rem 1.6rem;
+			height: 38rem;
+			overflow-y: auto;
+
+			@include respMin(600px) {
+				margin: 0;
+			}
+
+			&__tourney {
+				min-height: 5.6rem;
+				background-color: $color-bg-2;
+				border-radius: 7.6rem;
+				border: 0.2rem solid $color-bg-1;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-right: 1.4rem;
+
+				div {
+					width: 2.4rem;
+					height: 2.4rem;
+					line-height: 2.4rem;
+					text-align: center;
+					border-radius: 50%;
+					background-color: $color-bg-1;
+					font-size: 1rem;
+					margin-left: 1.4rem;
+				}
+
+				p {
+					font-size: 1.2rem;
+					margin: 1.05rem 0;
+					margin-left: 1.2rem;
+					width: 60%;
+				}
+			}
+		}
+	}
 }

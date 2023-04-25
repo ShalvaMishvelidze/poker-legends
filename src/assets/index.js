@@ -1,5 +1,6 @@
 import banner from './banner.jpg';
 import logo from './logo.png';
+import star from './star.png';
 import soon1x from './soon.png';
 import soon2x from './soon@2x.png';
 import soon3x from './soon@3x.png';
@@ -26,113 +27,114 @@ import finalPlaneTicket1 from './poker-item-1-ticket-icon.png';
 import finalPlaneTicket2 from './poker-item-2-ticket-icon.png';
 
 const prizes = [
-  {
-    text: 'The Festival in Philipines-ს საგზური',
-    img: travelSm,
-  },
-  {
-    text: 'სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Philipines-ს საგზური',
-    img: ticketSm,
-  },
-  {
-    text: 'Apple Airpods',
-    img: airpodsSm,
-  },
+	{
+		text: 'The Festival in Philipines-ს საგზური',
+		img: travelSm,
+	},
+	{
+		text: 'სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Philipines-ს საგზური',
+		img: ticketSm,
+	},
+	{
+		text: 'Apple Airpods',
+		img: airpodsSm,
+	},
 ];
 
 const festivalCategory = [
-  {
-    img: finalTicket,
-    text: 'ორმხრივი ავიაბილეთი',
-  },
-  {
-    img: finalHotel,
-    text: 'The Festival in Malta -ს მეინ ივენთის ბაი-ინი',
-  },
-  {
-    img: finalChip,
-    text: 'Holdem ან Omaha ჰაიროლერ ტურნირის ბაი-ინი',
-  },
-  {
-    img: finalTicket,
-    text: 'სასტუმრო',
-  },
-  {
-    img: finalTicket,
-    text: '€500 სახარჯი ფული',
-  },
+	{
+		img: finalTicket,
+		text: 'ორმხრივი ავიაბილეთი',
+	},
+	{
+		img: finalHotel,
+		text: 'The Festival in Malta -ს მეინ ივენთის ბაი-ინი',
+	},
+	{
+		img: finalChip,
+		text: 'Holdem ან Omaha ჰაიროლერ ტურნირის ბაი-ინი',
+	},
+	{
+		img: finalTicket,
+		text: 'სასტუმრო',
+	},
+	{
+		img: finalTicket,
+		text: '€500 სახარჯი ფული',
+	},
 ];
 
 const tickets = [
-  {
-    heading: '„Holdem Grinders”',
-    paragraphs: ['C კატეგორიის 1 საგზური'],
-    img: 't1',
-    warning: '',
-  },
-  {
-    heading: '“Cashgame Sharks”',
-    paragraphs: ['C კატეგორიის 1 საგზური'],
-    img: 't1',
-    warning: '',
-  },
-  {
-    heading: '„Holdem Grinders”',
-    paragraphs: ['C კატეგორიის 1 საგზური'],
-    img: 't1',
-    warning: '',
-  },
-  {
-    heading: '„The Festival in Malta, GTD“',
-    paragraphs: ['B კატეგორიის 1 საგზური', 'C კატეგორიის 1 საგზური'],
-    img: 't2',
-    warning:
-      '*ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.',
-  },
-  {
-    heading: '„Holdem Grinders”',
-    paragraphs: ['C კატეგორიის 1 საგზური'],
-    img: 't1',
-    warning:
-      '*ტურნირზე მონაწილებას შეძლებენ მხოლოდ ევროპაბეთის ბეჭდის მფლობელები.',
-  },
+	{
+		heading: '„Holdem Grinders”',
+		paragraphs: ['C კატეგორიის 1 საგზური'],
+		img: 't1',
+		warning: '',
+	},
+	{
+		heading: '“Cashgame Sharks”',
+		paragraphs: ['C კატეგორიის 1 საგზური'],
+		img: 't1',
+		warning: '',
+	},
+	{
+		heading: '„Holdem Grinders”',
+		paragraphs: ['C კატეგორიის 1 საგზური'],
+		img: 't1',
+		warning: '',
+	},
+	{
+		heading: '„The Festival in Malta, GTD“',
+		paragraphs: ['B კატეგორიის 1 საგზური', 'C კატეგორიის 1 საგზური'],
+		img: 't2',
+		warning:
+			'*ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.',
+	},
+	{
+		heading: '„Holdem Grinders”',
+		paragraphs: ['C კატეგორიის 1 საგზური'],
+		img: 't1',
+		warning:
+			'*ტურნირზე მონაწილებას შეძლებენ მხოლოდ ევროპაბეთის ბეჭდის მფლობელები.',
+	},
 ];
 
 const soon = [
-  { src: soon1x, dencity: '1x' },
-  { src: soon2x, dencity: '2x' },
-  { src: soon3x, dencity: '3x' },
+	{ src: soon1x, dencity: '1x' },
+	{ src: soon2x, dencity: '2x' },
+	{ src: soon3x, dencity: '3x' },
 ];
 
 const cashback = [
-  { src: cashback1x, dencity: '1x' },
-  { src: cashback2x, dencity: '2x' },
-  { src: cashback3x, dencity: '3x' },
+	{ src: cashback1x, dencity: '1x' },
+	{ src: cashback2x, dencity: '2x' },
+	{ src: cashback3x, dencity: '3x' },
 ];
 
 const jackpot = [
-  { src: jackpot1x, dencity: '1x' },
-  { src: jackpot2x, dencity: '2x' },
-  { src: jackpot3x, dencity: '3x' },
+	{ src: jackpot1x, dencity: '1x' },
+	{ src: jackpot2x, dencity: '2x' },
+	{ src: jackpot3x, dencity: '3x' },
 ];
 
 export {
-  finalBanner,
-  banner,
-  logo,
-  soon,
-  cashback,
-  jackpot,
-  example,
-  ticketSm,
-  prizes,
-  promoLeft,
-  promoLeftBig,
-  promoRight,
-  promoRightBig,
-  mechanic,
-  festivalCategory,
-  tickets,
-  finalPlaneTicket1,
-  finalPlaneTicket2,
+	finalBanner,
+	banner,
+	logo,
+	star,
+	soon,
+	cashback,
+	jackpot,
+	example,
+	ticketSm,
+	prizes,
+	promoLeft,
+	promoLeftBig,
+	promoRight,
+	promoRightBig,
+	mechanic,
+	festivalCategory,
+	tickets,
+	finalPlaneTicket1,
+	finalPlaneTicket2,
 };

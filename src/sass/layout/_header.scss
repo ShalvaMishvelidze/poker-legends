@@ -1,125 +1,193 @@
 .header {
-  margin: 10.4rem 0 0;
+	margin: 10.4rem 0 0;
 
-  &-login {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 1.6rem;
-    height: 3.2rem;
-    align-items: center;
+	@include respMin(940px) {
+		margin: 0;
+	}
 
-    &__left {
-      display: flex;
-      align-items: center;
+	&__x {
+		display: none;
+		position: relative;
+		margin-left: 89rem;
+		z-index: 1000;
 
-      &__logo {
-        width: 2.4rem;
-        height: 2.4rem;
-      }
-    }
+		div {
+			position: absolute;
+			width: 0.2rem;
+			height: 1.5rem;
+			background-color: $color-white;
+			top: 30%;
+			left: 48%;
 
-    &__right {
-      font-size: 1.5rem;
+			&:first-child {
+				transform: rotate(-45deg);
+			}
 
-      &__btn {
-        line-height: 3.2rem;
-        padding: 0.7rem;
-        text-decoration: none;
-        color: $color-white;
-        cursor: pointer;
-        text-decoration: none;
-      }
+			&:last-child {
+				transform: rotate(45deg);
+			}
+		}
 
-      &__btn--active {
-        line-height: 3.2rem;
-        padding: 0.7rem;
-        text-decoration: none;
-        color: $color-white;
-        cursor: pointer;
-        text-decoration: none;
-        background-color: $color-primary-light;
-        border-radius: 5px;
-      }
-    }
-  }
+		@include respMin(940px) {
+			display: block;
+			position: fixed;
+			top: 4.4rem;
+			width: 3.4rem;
+			height: 3.4rem;
+			background-color: $color-secondary-bg;
+			border-radius: 50%;
+		}
+	}
 
-  &-text {
-    margin: 1.6rem 1.6rem 2rem;
+	&-login {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 1.6rem;
+		height: 3.2rem;
+		align-items: center;
 
-    &--primary {
-      margin: 1.6rem 0;
-      font-size: 1.6rem;
-      font-weight: 600;
-    }
+		@include respMin(940px) {
+			display: none;
+		}
 
-    &--secondary {
-      font-size: 1.4rem;
-      opacity: 0.9;
+		&__left {
+			display: flex;
+			align-items: center;
 
-      &--slots {
-        font-size: 1.2rem;
-        padding: 0.5rem 1rem;
-        border-radius: 15px;
-        background-color: $color-secondary-bg;
-      }
-    }
-  }
+			&__logo {
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
 
-  &-nav {
-    margin: 0 1.6rem;
-    height: 9rem;
-    display: flex;
-    justify-content: center;
+		&__right {
+			font-size: 1.5rem;
 
-    &-link {
-      background-color: $color-bg-1;
-      width: calc(100% / 3 - 0.65rem);
-      height: 7.7rem;
-      position: relative;
-      top: 0.65rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0.9rem;
+			&__btn {
+				line-height: 3.2rem;
+				padding: 0.7rem;
+				text-decoration: none;
+				color: $color-white;
+				cursor: pointer;
+				text-decoration: none;
+			}
 
-      &:first-child {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-      }
+			&__btn--active {
+				line-height: 3.2rem;
+				padding: 0.7rem;
+				text-decoration: none;
+				color: $color-white;
+				cursor: pointer;
+				text-decoration: none;
+				background-color: $color-primary-light;
+				border-radius: 5px;
+			}
+		}
+	}
 
-      &:last-child {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-      }
+	&-text {
+		margin: 1.6rem 1.6rem 2rem;
 
-      &__p {
-        &--primary {
-          font-size: 1.2rem;
-        }
+		@include respMin(940px) {
+			margin: 1.6rem 4.3rem 2rem;
 
-        &--secondary {
-          font-size: 1rem;
-        }
-      }
+			&--fixed {
+				position: fixed;
+				top: 4.6rem;
+				height: 3.4rem;
+				margin-left: -3rem;
+				background-color: $color-secondary-bg;
+				padding-right: 1rem;
+				border-radius: 3.5rem;
+				border: 0.1rem solid $color-secondary-bg;
+				display: flex;
+				align-items: center;
+				z-index: 1000;
 
-      &--active {
-        background-color: $color-primary;
-        height: 9rem;
-        top: 0;
-        width: calc(100% / 3 + 1.3rem);
-        border-radius: 8px;
+				span {
+					background-color: $color-bg-1;
+				}
+			}
+		}
 
-        .header-nav-link__p {
-          &--primary {
-            font-size: 1.4rem;
-          }
+		&--primary {
+			margin: 1.6rem 0;
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
 
-          &--secondary {
-            font-size: 1.1rem;
-          }
-        }
-      }
-    }
-  }
+		&--secondary {
+			font-size: 1.4rem;
+			opacity: 0.9;
+
+			&--slots {
+				font-size: 1.2rem;
+				padding: 0.5rem 1rem;
+				border-radius: 15px;
+				background-color: $color-secondary-bg;
+			}
+		}
+	}
+
+	&-nav {
+		margin: 0 1.6rem;
+		height: 9rem;
+		display: flex;
+		justify-content: center;
+
+		@include respMin(600px) {
+			margin: 0 4.3rem;
+		}
+
+		&-link {
+			background-color: $color-bg-1;
+			width: calc(100% / 3 - 0.65rem);
+			height: 7.7rem;
+			position: relative;
+			top: 0.65rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 0.9rem;
+
+			&:first-child {
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+			&:last-child {
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+
+			&__p {
+				&--primary {
+					font-size: 1.2rem;
+				}
+
+				&--secondary {
+					font-size: 1rem;
+				}
+			}
+
+			&--active {
+				background-color: $color-primary;
+				height: 9rem;
+				top: 0;
+				width: calc(100% / 3 + 1.3rem);
+				border-radius: 8px;
+
+				.header-nav-link__p {
+					&--primary {
+						font-size: 1.4rem;
+					}
+
+					&--secondary {
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
+	}
 }

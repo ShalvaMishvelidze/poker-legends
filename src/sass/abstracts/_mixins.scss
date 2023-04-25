@@ -1,24 +1,38 @@
 @mixin flexCenterHv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @mixin absCenterHv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @mixin respMax($size) {
-  @media screen and (max-width: $size) {
-    @content;
-  }
+	/*
+      MEDIA QUERY SIZES:
+      // 374px
+      // 300px
+   */
+	@media screen and (max-width: $size) {
+		@content;
+	}
 }
 
 @mixin respMin($size) {
-  @media screen and (min-width: $size) {
-    @content;
-  }
+	/*
+      MEDIA QUERY SIZES:
+      // 940px
+      // 880px
+      // 680px
+      // 640px
+      // 600px
+   */
+
+	@media screen and (min-width: $size) {
+		@content;
+	}
 }

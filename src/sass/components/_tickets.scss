@@ -1,65 +1,124 @@
 .tickets {
-  background-color: $color-secondary-bg;
-  border-radius: 1.4rem;
-  margin-top: 2.569rem;
-  margin-bottom: 2.4rem;
+	background-color: $color-secondary-bg;
+	border-radius: 1.4rem;
+	margin-top: 2.569rem;
+	margin-bottom: 2.4rem;
+	overflow: hidden;
 
-  &-heading {
-    border-radius: 1.6rem;
-    background-color: $color-bg-1;
-    padding: 2.3rem 5.7rem 2.4rem;
-    overflow: hidden;
+	@include respMin(600px) {
+		background-color: $color-bg-3;
+		box-shadow: inset 0 0 0 0.4rem $color-bg-1;
+	}
 
-    &__heading {
-      text-align: center;
-      font-weight: 600;
-    }
-  }
+	&-heading {
+		border-radius: 1.6rem;
+		background-color: $color-bg-1;
+		padding: 2.3rem 5.7rem 2.4rem;
 
-  &-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.6rem;
-    padding-bottom: 1rem;
+		@include respMin(600px) {
+			border-radius: 0;
+		}
 
-    &__ticket {
-      border-radius: 1.2rem;
-      background-color: $color-bg-2;
-      padding: 2rem;
-      position: relative;
+		&__heading {
+			text-align: center;
+			font-weight: 600;
+		}
+	}
 
-      &__img {
-        width: 6.3rem;
-        position: absolute;
-        top: 0;
-        right: 1.448rem;
-      }
+	&-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1.6rem;
+		padding-bottom: 1rem;
 
-      &__heading {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
+		@include respMin(600px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+			padding-bottom: 2rem;
+		}
 
-      &__paragraph {
-        font-size: 1.3rem;
-        margin-top: 0.5rem;
-      }
+		&__ticket {
+			border-radius: 1.2rem;
+			background-color: $color-bg-2;
+			padding: 2rem;
+			position: relative;
 
-      &__warning {
-        font-size: 1.3rem;
-        margin-top: 0.5rem;
-      }
-    }
-  }
+			&:nth-child(1) {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
 
-  &__warning {
-    font-size: 1.3rem;
-    padding: 0 3.9rem 1rem;
-    text-align: center;
+			&:nth-child(2) {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 3;
+				grid-row-end: 5;
+			}
 
-    &:last-child {
-      padding-bottom: 1.4rem;
-    }
-  }
+			&:nth-child(3) {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 5;
+				grid-row-end: 7;
+			}
+
+			&:nth-child(4) {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 4;
+			}
+
+			&:nth-child(5) {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 4;
+				grid-row-end: 7;
+			}
+
+			&__img {
+				width: 6.3rem;
+				position: absolute;
+				top: 0;
+				right: 1.448rem;
+			}
+
+			&__heading {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			&__paragraph {
+				font-size: 1.3rem;
+				margin-top: 0.5rem;
+			}
+
+			&__warning {
+				font-size: 1.3rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+
+	&__warning {
+		font-size: 1.3rem;
+		padding: 0 3.9rem 1rem;
+		text-align: center;
+
+		@include respMin(800px) {
+			padding: 0 13rem 1.2rem;
+		}
+
+		&:last-child {
+			padding-bottom: 1.4rem;
+
+			@include respMin(800px) {
+				padding: 0 19rem 2rem;
+			}
+		}
+	}
 }
